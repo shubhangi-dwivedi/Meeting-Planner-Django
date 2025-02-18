@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Rooms List</title>
-</head>
-<body>
-  <p>List of rooms :
+{% extends "base.html" %}
+
+{% block title %}Rooms{% endblock %}
+
+{% block content %}
+<h1>List of rooms :</h1>
+  <p>
       <ul>
           {% for room in rooms %}
           <li>
@@ -14,5 +13,5 @@
           {% endfor %}
       </ul>
   </p>
-</body>
-</html>
+
+{% endblock %}
